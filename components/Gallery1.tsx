@@ -17,28 +17,28 @@ const Gallery1 = () => {
   )
 }
 
-// import '@vidstack/react/player/styles/default/theme.css';
-// import '@vidstack/react/player/styles/default/layouts/video.css';
+import '@vidstack/react/player/styles/default/theme.css';
+import '@vidstack/react/player/styles/default/layouts/video.css';
 
-// import { MediaPlayer, MediaProvider } from '@vidstack/react';
+import { MediaPlayer, MediaProvider } from '@vidstack/react';
 import Link from 'next/link';
 
-// const VideoPlayer = () => {
-//   return (
-//     <div className='w-[60vw]'>
-//       <MediaPlayer 
-//         load="eager" 
-//         title="Product" 
-//         src="/videos/product.mp4" 
-//         autoPlay // Enable autoplay
-//         muted // Mute the video to allow autoplay
-//         loop // Enable looping
-//       >
-//         <MediaProvider />
-//       </MediaPlayer>
-//     </div>
-//   );
-// };
+const VideoPlayer = () => {
+  return (
+    <div className='w-[60vw]'>
+      <MediaPlayer 
+        load="eager" 
+        title="Product" 
+        src="/videos/product.mp4" 
+        autoPlay // Enable autoplay
+        muted // Mute the video to allow autoplay
+        loop // Enable looping
+      >
+        <MediaProvider />
+      </MediaPlayer>
+    </div>
+  );
+};
 
 export default Gallery1
 
