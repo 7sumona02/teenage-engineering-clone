@@ -10,35 +10,35 @@ const Gallery3 = () => {
                 </Link>
             </div>
             <div className='flex justify-center absolute top-0 right-0 -z-10'>
-                <VideoPlayer />
+                {/* <VideoPlayer /> */}
             </div>
         </div>
     </div>
   )
 }
 
-import '@vidstack/react/player/styles/default/theme.css';
-import '@vidstack/react/player/styles/default/layouts/video.css';
+// import '@vidstack/react/player/styles/default/theme.css';
+// import '@vidstack/react/player/styles/default/layouts/video.css';
 
-import { MediaPlayer, MediaProvider } from '@vidstack/react';
+// import { MediaPlayer, MediaProvider } from '@vidstack/react';
 import Link from 'next/link';
 
-const VideoPlayer = () => {
-  return (
-    <div className='w-screen h-screen'>
-      <MediaPlayer 
-        load="eager" 
-        title="Product" 
-        src="/videos/music.mp4" 
-        autoPlay // Enable autoplay
-        muted // Mute the video to allow autoplay
-        loop // Enable looping
-      >
-        <MediaProvider />
-      </MediaPlayer>
-    </div>
-  );
-};
+// const VideoPlayer = () => {
+//   return (
+//     <div className='w-screen h-screen'>
+//       <MediaPlayer 
+//         load="eager" 
+//         title="Product" 
+//         src="/videos/music.mp4" 
+//         autoPlay // Enable autoplay
+//         muted // Mute the video to allow autoplay
+//         loop // Enable looping
+//       >
+//         <MediaProvider />
+//       </MediaPlayer>
+//     </div>
+//   );
+// };
 
 export default Gallery3
 
