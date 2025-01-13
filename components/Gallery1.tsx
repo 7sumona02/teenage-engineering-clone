@@ -1,0 +1,44 @@
+import React from 'react'
+
+const Gallery1 = () => {
+  return (
+    <div className='h-screen'>
+        <div>
+            <div className='p-20'>
+                <h1 className='text-2xl font-sans font-light tracking-wide'>EP-222 II</h1>
+                <a href="/"><div className='inline-block mt-4 text-red-600 text-lg tracking-wide font-sans hover:underline'>explore</div>
+                </a>
+            </div>
+            <div className='flex justify-center'>
+                <VideoPlayer />
+            </div>
+        </div>
+    </div>
+  )
+}
+
+import '@vidstack/react/player/styles/default/theme.css';
+import '@vidstack/react/player/styles/default/layouts/video.css';
+
+import { MediaPlayer, MediaProvider } from '@vidstack/react';
+
+const VideoPlayer = () => {
+  return (
+    <div className='w-[60vw]'>
+      <MediaPlayer 
+        load="eager" 
+        title="Product" 
+        src="/videos/product.mp4" 
+        autoPlay // Enable autoplay
+        muted // Mute the video to allow autoplay
+        loop // Enable looping
+      >
+        <MediaProvider />
+      </MediaPlayer>
+    </div>
+  );
+};
+
+export default Gallery1
+
+
