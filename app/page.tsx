@@ -4,6 +4,8 @@ import Gallery1 from '@/components/Gallery1'
 import React from 'react'
 import Gallery2 from '@/components/Gallery2'
 import Gallery3 from '@/components/Gallery3'
+import Banner from '@/components/Banner'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
@@ -13,6 +15,8 @@ const page = () => {
       <Gallery1 />
       <Gallery2 />
       <Gallery3 />
+      <Banner />
+      <Footer />
     </div>
   )
 }
