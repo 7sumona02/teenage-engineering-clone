@@ -11,7 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      },
+        'first' : '#a1a1aa',
+      }
     },
   },
   plugins: [],
