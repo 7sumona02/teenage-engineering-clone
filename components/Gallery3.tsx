@@ -6,8 +6,8 @@ const Gallery3 = () => {
         <div>
             <div className='p-20'>
                 <h1 className='text-2xl font-sans font-light tracking-wide'>teenage engineering <br />field system</h1>
-                <a href="/"><div className='inline-block mt-4 text-red-600 text-lg tracking-wide font-sans hover:underline'>explore</div>
-                </a>
+                <Link href="/"><div className='inline-block mt-4 text-red-600 text-lg tracking-wide font-sans hover:underline'>explore</div>
+                </Link>
             </div>
             <div className='flex justify-center absolute top-0 right-0 -z-10'>
                 <VideoPlayer />
@@ -21,6 +21,7 @@ import '@vidstack/react/player/styles/default/theme.css';
 import '@vidstack/react/player/styles/default/layouts/video.css';
 
 import { MediaPlayer, MediaProvider } from '@vidstack/react';
+import Link from 'next/link';
 
 const VideoPlayer = () => {
   return (
